@@ -1,0 +1,11 @@
+.header {
+    margin: 0;
+    padding: 10px;
+    background: #39EAA8;
+    color: white;
+    font-size: 30px;
+  }
+
+  .header-text{
+      text-align: left;
+  }
