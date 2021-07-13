@@ -5,11 +5,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <Header />
-      </div>
-      <div>
+    <div class="container">
+      <Header />
+      <div class="menu-container">
         <Menu />
       </div>
     </div>

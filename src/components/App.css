@@ -5,14 +5,11 @@
     font-weight: 300;
   }
 
-  .red {
-      background:red;
-      width: 100%;
-      height: 20%;
-  }
+.container {
+    position: relative;
+}
 
-  .green {
-      background: green;
-      width: 100%;
-      height: 20%;
-  }
+.menu-container {
+    position: absolute;
+    /* border-radius: 0px 34px 34px 0px; */
+}

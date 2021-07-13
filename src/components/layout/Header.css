@@ -4,6 +4,7 @@
     background: #39EAA8;
     color: white;
     font-size: 30px;
+    position: relative;
   }
 
   .header-text{

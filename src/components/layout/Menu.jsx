@@ -4,10 +4,18 @@ import './Menu.css';
 const Menu = () => {
   return (
     <div id="mySidenav" class="sidenav">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#">
+        <img className="menu-icons" src="../assets/icon/book.svg"></img>
+      </a>
+      <a href="#">
+        <img className="menu-icons" src="../assets/icon/trophy.svg"></img>
+      </a>
+      <a href="#">
+        <img className="menu-icons" src="../assets/icon/focus.svg"></img>
+      </a>
+      <a href="#">
+        <img className="menu-icons" src="../assets/icon/notes.svg"></img>
+      </a>
     </div>
   );
 };
