@@ -5,8 +5,11 @@
     color: white;
     font-size: 30px;
     position: relative;
+    box-shadow: 0 0px 5px rgb(4, 94, 23);
+    z-index: 1;
   }
 
   .header-text{
       text-align: left;
+      font-weight: 400;
   }
