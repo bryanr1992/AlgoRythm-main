@@ -27,8 +27,8 @@ const App = () => {
     // <StackInst />
     // <Notes />
     //<BubbleInst />
-    //<Stack />
-    <Queues />
+    <Stack />
+    //<Queues />
   );
 };
 

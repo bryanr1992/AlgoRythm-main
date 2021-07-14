@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Stack.css';
 
 var color = '';
 var aTitle = '';
-var i = 0;
 var reverseItems = [];
 
 const Stack = () => {
@@ -81,7 +80,7 @@ const Stack = () => {
   }
 
   function handleChange(event) {
-    const { name, value } = event.target;
+    const { value } = event.target;
     setInput(value);
   }
 
@@ -113,7 +112,11 @@ const Stack = () => {
 
 
   const filteredItems = items.filter((item, itemIndex) => {
-    if (itemIndex >= 1 && itemIndex <= 8) return item;
+    if (itemIndex >= 1 && itemIndex <= 8) {
+        return item;
+    } else{
+        return '';
+    }
   });
 
   return (

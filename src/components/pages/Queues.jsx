@@ -39,7 +39,7 @@ const Queues = () => {
 
   const handleLeave = async () => {
     setStatus(true);
-    if (c != 0) {
+    if (c !== 0) {
       colors.splice(0, 1);
       colorCounter--;
       var element = document.getElementById(items[0]);
@@ -53,7 +53,7 @@ const Queues = () => {
   };
 
   const changePosition = async () => {
-    if (c != 0) {
+    if (c !== 0) {
       let n = 2;
       for (let i = 0; i < c; i++) {
         let element = document.getElementById(n);
