@@ -67,6 +67,11 @@ ol, ul {
     height: 50vh;
 }
 
+.custom-img-stack{
+  width: 50vh;
+  height: 50vh;
+}
+
 .custom-icon{
     color:var(--background-color-custom-reg);
     padding-top:25%;

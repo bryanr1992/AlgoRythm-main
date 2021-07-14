@@ -3,6 +3,11 @@ import Menu from './layout/Menu';
 import Header from './layout/Header';
 import './App.css';
 import QueueInst from './pages/QueueInst';
+import StackInst from './pages/StackInst';
+import Notes from './pages/Notes';
+import BubbleInst from './pages/BubbleInst';
+import Stack from './pages/Stack';
+import Queues from './pages/Queues';
 
 const App = () => {
   const setTheme = () => {
@@ -18,7 +23,12 @@ const App = () => {
     //     <Menu />
     //   </div>
     // </div>
-    <QueueInst />
+    // <QueueInst />
+    // <StackInst />
+    // <Notes />
+    //<BubbleInst />
+    //<Stack />
+    <Queues />
   );
 };
 

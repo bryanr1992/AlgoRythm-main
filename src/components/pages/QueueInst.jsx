@@ -1,4 +1,4 @@
-import './QueueInst.css';
+import './Instruction.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
