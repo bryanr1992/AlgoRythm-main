@@ -30,7 +30,6 @@ const Stack = () => {
   const [input, setInput] = useState('');
   const [reverse, setReverse] = useState(false);
 
-
   function addItem(item) {
     if (items.length >= 8) {
       return;
@@ -91,7 +90,6 @@ const Stack = () => {
     var newItem = items[items.length - 1];
     pop();
 
-
     if (reverse) {
       setTimeout(() => {
         reverseItems.push(newItem);
@@ -110,26 +108,29 @@ const Stack = () => {
     }
   };
 
-
   const filteredItems = items.filter((item, itemIndex) => {
     if (itemIndex >= 1 && itemIndex <= 8) {
-        return item;
-    } else{
-        return '';
+      return item;
+    } else {
+      return '';
     }
   });
 
   return (
     <React.Fragment>
       <div className="top">
-        <button className="ion-margin themed-btn" onClick={handleClick}>
+        <button
+          className=" mini ui primary button stack-btn"
+          onClick={handleClick}
+        >
           Push
         </button>
-        <button className="ion-margin themed-btn" onClick={pop}>
+        <button className=" mini ui primary button stack-btn" onClick={pop}>
           Pop
         </button>
-        <div className="stack-container">
+        <div className="ui input focus stack-input">
           <input
+            className="stack-input"
             onChange={handleChange}
             value={input}
             name="word"
@@ -137,10 +138,16 @@ const Stack = () => {
             type="text"
           ></input>
         </div>
-        <button onClick={handleClick2} class="ion-margin themed-btn">
+        <button
+          onClick={handleClick2}
+          class=" mini ui primary button stack-btn"
+        >
           Push letter
         </button>
-        <button onClick={reverseWord} className="ion-margin themed-btn">
+        <button
+          onClick={reverseWord}
+          className="mini ui primary button stack-btn"
+        >
           Reverse
         </button>
       </div>

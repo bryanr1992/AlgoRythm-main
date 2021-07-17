@@ -17,17 +17,17 @@ const App = () => {
 
   setTheme();
   return (
-    // <div class="container">
-    //   <Header />
-    //   <div class="menu-container">
-    //     <Menu />
-    //   </div>
-    // </div>
-    // <QueueInst />
+    <div class="container">
+      <Header />
+      <div class="menu-container">
+        <Menu />
+      </div>
+    </div>
+     //<QueueInst />
     // <StackInst />
     // <Notes />
     //<BubbleInst />
-    <Stack />
+    // <Stack />
     //<Queues />
   );
 };

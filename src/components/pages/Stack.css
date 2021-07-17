@@ -70,6 +70,15 @@
     
 }
 
+.mini.ui.primary.button.stack-btn {
+    background: var(--background-color-custom-reg);
+    margin-left: 10px;
+}
+
+.stack-input{
+    margin-left: 6.857px;
+}
+
 /* .pop-block{
     margin-top:10px;
     margin-bottom:10px;
@@ -84,6 +93,7 @@
 .top{
     width:100%;
     height:100%;
+    padding-top: 10px;
     padding-bottom: 50px;
 }
 

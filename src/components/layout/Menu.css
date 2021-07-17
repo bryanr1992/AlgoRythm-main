@@ -1,21 +1,48 @@
+.theme-dark {
+    --background-color-custom: transparent linear-gradient(180deg, #720fcb 0%, #220441 100%) 0% 0% no-repeat padding-box;
+    --background-color-custom-reg: #720fcb;
+    --background-color-text-area:#fff;
+    --background-color-input:#2e2a2a;
+    --background-color-button:#591180;
+    --background-color-page: #2e2a2a;
+  }
+  
+  .theme-light {
+    --background-color-custom: transparent linear-gradient(180deg, #39EAA8 0%, #0028EF 100%) 0% 0% no-repeat padding-box;
+    --background-color-custom-reg: #38EAA8;
+    --background-color-page: #f5f5f5;
+    --background-color-text-area:#2e2a2a;
+  }
+
 /* The side navigation menu */
 #mySidenav {
-    width: 140px;
+    width: 120px;
 }
 
 #mySidenav:hover{
     width: 210px;
 }
 
-#mySidenav:hover a{
+.sidenav .my-a:hover {
+    background-color: #E9EEF7;
+}
+
+.sidenav .my-a:hover p{
+    color: var(--background-color-custom-reg);
+    font-size: large;
+    font-weight: bolder;
+}
+
+#mySidenav:hover .my-a{
     padding-left: 30px;
+    color: #f5f5f5;
 }
 
   .sidenav {
     transition: width 0.75s;
     left: 0px;
     width: 100%;
-    height: 91vh;
+    height: 93vh;
     background: transparent linear-gradient(180deg, #39EAA8 0%, #0028EF 100%) 0% 0% no-repeat padding-box;
     border-radius: 0px 34px 34px 0px;
     opacity: 1;
@@ -26,15 +53,17 @@
     top:0;
   }
 
-  .sidenav a {
+  .sidenav .my-a {
       transition: padding 0.75s;
       display: block;
       padding-top: 20px;
       padding-bottom: 20px;
       padding-left:10px;
       margin-top: 20px;
-      /* background-color: white; */
+      border: none;
+      color: transparent;
   }
+
 
   .menu-icons{
     height: 50px;
@@ -46,5 +75,18 @@
     position:absolute;
     margin-top:20px;
     margin-left:20px
+}
+
+.item-background-color:hover{
+    --ion-item-background:#E9EEF7!important;
+    color: var(--background-color-custom-reg)!important;
+    font-size: large!important;
+    font-weight: bold!important;
+}
+
+.sub-item-background-color:hover{
+    --ion-item-background:#E9EEF7;
+    font-size: large;
+    font-weight: bolder;
 }
   

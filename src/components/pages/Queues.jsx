@@ -70,11 +70,11 @@ const Queues = () => {
   };
 
   return (
-    <div className="q-top">
-      <button className="ion-margin themed-btn" onClick={handleClick} disabled={status}>
+    <div className="top">
+      <button className="mini ui primary button stack-btn" onClick={handleClick} disabled={status}>
         Insert
       </button>
-      <button className="ion-margin themed-btn" onClick={handleLeave} disabled={status}>
+      <button className="mini ui primary button stack-btn" onClick={handleLeave} disabled={status}>
         Leave
       </button>
       <div className="q-top-2">
