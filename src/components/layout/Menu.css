@@ -17,10 +17,15 @@
 /* The side navigation menu */
 #mySidenav {
     width: 120px;
+    position: relative;
 }
 
 #mySidenav:hover{
     width: 210px;
+}
+
+#mySidenav:hover ol.gradient-list > li{
+    margin-left: 220px !important;
 }
 
 .sidenav .my-a:hover {

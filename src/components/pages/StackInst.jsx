@@ -1,17 +1,29 @@
+import { useEffect } from 'react';
 import './Instruction.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const StackInst = () => {
+
+  // useEffect(() => {
+  //   const changeIndex = () => {
+  //     const element = document.querySelector('.main-container');
+  //     element.style.zIndex= -1;
+  //     //console.log(element.style.zIndex);
+  //   };
+  //   changeIndex();
+  
+  // }, []);
+
   return (
-    <div>
+    <div className="front">
       <h1 class="custom-h1">Stacks</h1>
 
       <div>
         <div id="wrapper">
           <div id="main">
             <div class="inner">
-              <header class="major">
+              <header className="major">
                 {/* previously id="header" */}
                 <a href="index.html" class="logo">
                   <strong>Stack Introduction</strong> by AlgoRythm

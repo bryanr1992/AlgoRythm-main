@@ -8,6 +8,9 @@ import Notes from './pages/Notes';
 import BubbleInst from './pages/BubbleInst';
 import Stack from './pages/Stack';
 import Queues from './pages/Queues';
+import Logo from './layout/Logo';
+import Outline from './pages/Outline';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   const setTheme = () => {
@@ -16,19 +19,40 @@ const App = () => {
   };
 
   setTheme();
+
   return (
-    <div class="container">
-      <Header />
-      <div class="menu-container">
+    // <BrowserRouter>
+    //   <div className="main-wrapper">
+    //     <div class="container">
+    //       <Header />
+    //       <div class="menu-container">
+    //         <Menu />
+    //       </div>
+    //     </div>
+    //   </div>
+    //   <div className="main-container">
+    //     <Switch>
+    //       <Route path="/" component={Logo} exact />
+    //       <Route path="/outline" component={Outline} />
+    //       <Route path="/stacks" component={StackInst} />
+    //       <Route path="/notes" component={Notes} />
+    //     </Switch>
+    //   </div>
+    // </BrowserRouter>
+    <div className="main-wrapper">
+      <BrowserRouter>
+        <Header />
         <Menu />
-      </div>
+        <div className="main-container">
+          <Switch>
+            <Route path="/" component={Logo} exact />
+            <Route path="/outline" component={Outline} />
+            <Route path="/stacks" component={StackInst} />
+            <Route path="/notes" component={Notes} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     </div>
-     //<QueueInst />
-    // <StackInst />
-    // <Notes />
-    //<BubbleInst />
-    // <Stack />
-    //<Queues />
   );
 };
 

@@ -23,6 +23,9 @@
   --background:var(--background-color-custom-reg);
 }
 
+.front{
+  z-index: 2;
+}
 html, body, .my-div, span, applet, object,
 iframe, h1, .custom-h2, .custom-h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -82,7 +85,7 @@ ol, ul {
 }
 
 .custom-h1 {
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 blockquote, q {

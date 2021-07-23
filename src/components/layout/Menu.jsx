@@ -1,25 +1,26 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Menu.css';
 
 const Menu = () => {
   return (
     <div id="mySidenav" class="sidenav">
-      <a className="my-a" href="#">
+      <Link className="my-a" to="/outline">
         <img className="menu-icons" src="../assets/icon/book.svg"></img>
         <p className="menu-text">Learn</p>
-      </a>
-      <a className="my-a" href="#">
+      </Link>
+      <Link className="my-a" to="/challenge">
         <img className="menu-icons" src="../assets/icon/trophy.svg"></img>
         <p className="menu-text">Challenge</p>
-      </a>
-      <a className="my-a" href="#">
+      </Link>
+      <Link className="my-a" to="/practice">
         <img className="menu-icons" src="../assets/icon/focus.svg"></img>
         <p className="menu-text">Practice</p>
-      </a>
-      <a className="my-a" href="#">
+      </Link>
+      <Link className="my-a" to="/notes">
         <img className="menu-icons" src="../assets/icon/notes.svg"></img>
         <p className="menu-text">Notes</p>
-      </a>
+      </Link>
     </div>
   );
 };
