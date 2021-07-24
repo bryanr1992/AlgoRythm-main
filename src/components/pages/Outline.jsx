@@ -16,7 +16,7 @@ const Outline = () => {
 
   return (
     <React.Fragment>
-      <ol class="gradient-list gradient-list-2">
+      <ol class="gradient-list">
         <li>
           <Link to="/stacks">Stacks</Link>
         </li>

@@ -25,7 +25,7 @@ const StackInst = () => {
             <div class="inner">
               <header className="major">
                 {/* previously id="header" */}
-                <a href="index.html" class="logo">
+                <a href="index.html" className="logo">
                   <strong>Stack Introduction</strong> by AlgoRythm
                 </a>
               </header>
@@ -101,7 +101,7 @@ const StackInst = () => {
                     <h3 className="custom-h3">
                       2. It's a known word and easy to visualize
                     </h3>
-                    <img className="custom-img-stack" src="assets/images/stack.png" alt="" />
+                    <img className="custom-img" src="assets/images/stack.png" alt="" />
                     <p class="custom-p-title">
                       This is how we visualize a stack. For a more detail
                       explanation click the button below!

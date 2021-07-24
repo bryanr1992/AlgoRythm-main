@@ -66,8 +66,7 @@ ol, ul {
 }
 
 .custom-img{
-    width: 85vh;
-    height: 50vh;
+  max-width: 65%;
 }
 
 .custom-img-stack{
@@ -85,7 +84,7 @@ ol, ul {
 }
 
 .custom-h1 {
-    margin-left: 15%;
+    margin-left: 5%;
 }
 
 blockquote, q {

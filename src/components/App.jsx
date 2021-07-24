@@ -21,24 +21,6 @@ const App = () => {
   setTheme();
 
   return (
-    // <BrowserRouter>
-    //   <div className="main-wrapper">
-    //     <div class="container">
-    //       <Header />
-    //       <div class="menu-container">
-    //         <Menu />
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="main-container">
-    //     <Switch>
-    //       <Route path="/" component={Logo} exact />
-    //       <Route path="/outline" component={Outline} />
-    //       <Route path="/stacks" component={StackInst} />
-    //       <Route path="/notes" component={Notes} />
-    //     </Switch>
-    //   </div>
-    // </BrowserRouter>
     <div className="main-wrapper">
       <BrowserRouter>
         <Header />

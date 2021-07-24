@@ -24,9 +24,9 @@
     width: 210px;
 }
 
-#mySidenav:hover ol.gradient-list > li{
+/* #mySidenav:hover ol.gradient-list > li{
     margin-left: 220px !important;
-}
+} */
 
 .sidenav .my-a:hover {
     background-color: #E9EEF7;
@@ -81,17 +81,7 @@
     margin-top:20px;
     margin-left:20px
 }
-
-.item-background-color:hover{
-    --ion-item-background:#E9EEF7!important;
-    color: var(--background-color-custom-reg)!important;
-    font-size: large!important;
-    font-weight: bold!important;
-}
-
-.sub-item-background-color:hover{
-    --ion-item-background:#E9EEF7;
-    font-size: large;
-    font-weight: bolder;
-}
   
+#mySidenav:hover + .main-container {
+    margin-left: 100px;
+}
