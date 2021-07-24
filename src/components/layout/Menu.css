@@ -18,6 +18,7 @@
 #mySidenav {
     width: 120px;
     position: relative;
+    padding-top:10px;
 }
 
 #mySidenav:hover{
@@ -67,7 +68,32 @@
       margin-top: 20px;
       border: none;
       color: transparent;
+      position: relative;
   }
+
+  .sidenav .my-a:hover::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      border-radius: 50%;
+      box-shadow: 15px 15px 0 #E9EEF7;
+  }
+
+  .sidenav .my-a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #E9EEF7;
+}
 
 
   .menu-icons{
@@ -84,4 +110,5 @@
   
 #mySidenav:hover + .main-container {
     margin-left: 100px;
+    padding-right: 100px;
 }
