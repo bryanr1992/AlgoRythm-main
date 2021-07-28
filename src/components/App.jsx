@@ -11,7 +11,7 @@ import Queues from './pages/Queues';
 import Logo from './layout/Logo';
 import Outline from './pages/Outline';
 import Section from './layout/Section';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   const setTheme = () => {
@@ -23,18 +23,20 @@ const App = () => {
 
   return (
     <div className="main-wrapper">
-      <BrowserRouter>
+      <Router>
         <Header />
         <Menu />
         <div className="main-container">
           <Switch>
             <Route path="/" component={Section} exact />
+            <Route path="/bubble" component={BubbleInst} />
+            <Route path="/queues" component={QueueInst} />
             <Route path="/outline" component={Outline} />
             <Route path="/stacks" component={StackInst} />
             <Route path="/notes" component={Notes} />
           </Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };

@@ -60,6 +60,10 @@
     font-family: "Roboto Slab", serif;
     font-weight: 700;
   }
+
+  .custom-note-header{
+    margin-left:5%;
+  }
   
   header h1 {
     color: #fff;
