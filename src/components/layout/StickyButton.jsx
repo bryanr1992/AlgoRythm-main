@@ -7,7 +7,7 @@ const StickyButton = () => {
     <div className="sticky">
       <button className="sticky-button">
         <div className="sticky-custom-icon">
-          <FontAwesomeIcon icon={faStickyNote} size="1x" />
+          <FontAwesomeIcon icon={faStickyNote} size="2x" />
         </div>
       </button>
     </div>

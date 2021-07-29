@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import './Instruction.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import StickyButton from '../layout/StickyButton';
 
 const StackInst = () => {
-
   // useEffect(() => {
   //   const changeIndex = () => {
   //     const element = document.querySelector('.main-container');
@@ -12,11 +12,12 @@ const StackInst = () => {
   //     //console.log(element.style.zIndex);
   //   };
   //   changeIndex();
-  
+
   // }, []);
 
   return (
     <div className="front">
+      <StickyButton />
       <h1 class="custom-h1">Stacks</h1>
 
       <div>
@@ -101,7 +102,11 @@ const StackInst = () => {
                     <h3 className="custom-h3">
                       2. It's a known word and easy to visualize
                     </h3>
-                    <img className="custom-img" src="assets/images/stack.png" alt="" />
+                    <img
+                      className="custom-img"
+                      src="assets/images/stack.png"
+                      alt=""
+                    />
                     <p class="custom-p-title">
                       This is how we visualize a stack. For a more detail
                       explanation click the button below!

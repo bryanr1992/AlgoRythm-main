@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ModalPage from './ModalPage';
 import './Stack.css';
 
 var color = '';
@@ -118,6 +119,7 @@ const Stack = () => {
 
   return (
     <React.Fragment>
+      <ModalPage />
       <div className="top">
         <button
           className=" mini ui primary button stack-btn"

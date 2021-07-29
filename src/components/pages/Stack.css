@@ -92,9 +92,8 @@
 
 .top{
     width:100%;
-    height:100%;
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-left: 5%;
 }
 
 .themed-btn::part(native){

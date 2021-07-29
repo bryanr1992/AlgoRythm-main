@@ -28,7 +28,8 @@ const App = () => {
         <Menu />
         <div className="main-container">
           <Switch>
-            <Route path="/" component={Section} exact />
+            <Route path="/" component={Logo} exact />
+            <Route path="/stack-p" component={Stack} />
             <Route path="/bubble" component={BubbleInst} />
             <Route path="/queues" component={QueueInst} />
             <Route path="/outline" component={Outline} />

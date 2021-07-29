@@ -1,10 +1,12 @@
 import './Instruction.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import StickyButton from '../layout/StickyButton';
 
 const BubbleInst = () => {
   return (
     <div>
+      <StickyButton />
       <h1 class="custom-h1">Bubble Sort</h1>
 
       <div>
@@ -22,7 +24,9 @@ const BubbleInst = () => {
               <section id="banner">
                 <div class="content">
                   <header>
-                    <h1 className="custom-h1-inner">Hi I'm the bubble sort algorithm!</h1>
+                    <h1 className="custom-h1-inner">
+                      Hi I'm the bubble sort algorithm!
+                    </h1>
                     <FontAwesomeIcon
                       className="custom-p"
                       icon="coffee"
