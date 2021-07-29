@@ -1,11 +1,13 @@
 import './Instruction.css';
+import '../layout/StickyButton.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import StickyButton from '../layout/StickyButton';
 
 const QueueInst = () => {
-
   return (
     <div>
+      <StickyButton />
       <h1 className="custom-h1">Queues</h1>
 
       <div>
@@ -95,7 +97,11 @@ const QueueInst = () => {
                       first person on the line, you will be the first person to
                       enter watch the movie.
                     </p>
-                    <img className="image custom-img" src="assets/images/Queue.png" alt="" />
+                    <img
+                      className="image custom-img"
+                      src="assets/images/Queue.png"
+                      alt=""
+                    />
                   </article>
                   <article>
                     <a href="#" className="image">

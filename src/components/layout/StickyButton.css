@@ -1,0 +1,48 @@
+.theme-dark {
+    --background-color-custom: transparent linear-gradient(180deg, #720fcb 0%, #220441 100%) 0% 0% no-repeat padding-box;
+    --background-color-custom-reg: #720fcb;
+    --background-color-text-area:#fff;
+    --background-color-input:#2e2a2a;
+    --background-color-button:#591180;
+    --background-color-page: #2e2a2a;
+    --background-color-custom-text:#f5f5f5;
+  
+  }
+  
+  .theme-light {
+    --background-color-custom: transparent linear-gradient(180deg, #39EAA8 0%, #0028EF 100%) 0% 0% no-repeat padding-box;
+    --background-color-custom-reg: #38EAA8;
+    --background-color-page: #f5f5f5;
+    --background-color-text-area:#2e2a2a;
+    --background-color-custom-text:#3d4449;
+  }
+
+
+div.sticky {
+    display:flex;
+    justify-content: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 15px;
+    right: 10px;
+    float: right;
+  }
+
+  div .sticky-button {
+      background-color: #f5f5f5; /* Green */
+      border: solid 2px var(--background-color-custom-reg);
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      
+  }
+
+  .sticky-custom-icon {
+    display: flex;
+    justify-content: center;
+    color:var(--background-color-custom-reg);
+  }
