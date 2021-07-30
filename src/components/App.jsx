@@ -26,7 +26,7 @@ const App = () => {
       <Router>
         <Header />
         <Menu />
-        <div className="main-container">
+        <div id="main" className="main-container">
           <Switch>
             <Route path="/" component={Logo} exact />
             <Route path="/stack-p" component={Stack} />

@@ -119,7 +119,7 @@ const Stack = () => {
 
   return (
     <React.Fragment>
-      <ModalPage />
+      <ModalPage customStyle="modal-btn" />
       <div className="top">
         <button
           className=" mini ui primary button stack-btn"

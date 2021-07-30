@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import './ModalPage.css';
 
-const ModalPage = () => {
+const ModalPage = ({ customStyle }) => {
   var modal;
   var btn;
   var span;
+  var container;
 
   const ref = useRef();
 
@@ -12,10 +13,12 @@ const ModalPage = () => {
     modal = document.getElementById('myModal');
     btn = document.getElementById('myBtn');
     span = document.getElementsByClassName('close')[0];
+    container = document.getElementById('main');
 
     const onModalClick = (event) => {
       if (ref.current.contains(event.target)) {
         modal.style.display = 'none';
+        container.style.zIndex = -1;
       }
     };
 
@@ -30,15 +33,17 @@ const ModalPage = () => {
 
   const handleClick = () => {
     modal.style.display = 'block';
+    container.style.zIndex = 0;
   };
 
   const handleClose = () => {
     modal.style.display = 'none';
+    container.style.zIndex = -1;
   };
 
   return (
     <React.Fragment>
-      <button onClick={handleClick} id="myBtn" className="modal-btn">
+      <button onClick={handleClick} id="myBtn" className={customStyle}>
         Open Modal
       </button>
       <div ref={ref} id="myModal" className="modal">

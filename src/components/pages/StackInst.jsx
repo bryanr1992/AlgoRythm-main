@@ -17,7 +17,7 @@ const StackInst = () => {
 
   return (
     <div className="front">
-      <StickyButton />
+      <StickyButton customStyle="modal-btn" />
       <h1 class="custom-h1">Stacks</h1>
 
       <div>
