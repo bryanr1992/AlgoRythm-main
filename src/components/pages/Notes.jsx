@@ -30,25 +30,7 @@ const Notes = () => {
     });
   };
 
-  return (
-    <div className="background-content">
-      <NoteHeader />
-      <CreateNote onAdd={addNote} />
-      {notes.map((note, noteIndex) => {
-        return (
-          <Note
-            key={noteIndex}
-            id={noteIndex}
-            title={note.title}
-            content={note.content}
-            onRemove={onDelete}
-          />
-        );
-      })}
-      {/* <Note key={1} title="Note title" content="Note content" /> */}
-      <NoteFooter />
-    </div>
-  );
+  return <CreateNote onAdd={addNote} />;
 };
 
 export default Notes;

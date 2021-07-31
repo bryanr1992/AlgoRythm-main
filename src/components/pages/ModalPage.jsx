@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faStickyNote,
+  faQuestionCircle,
+} from '@fortawesome/free-solid-svg-icons';
 import './ModalPage.css';
 
-const ModalPage = ({ customStyle }) => {
+const ModalPage = ({ flag, children }) => {
   var modal;
   var btn;
   var span;
@@ -15,20 +20,20 @@ const ModalPage = ({ customStyle }) => {
     span = document.getElementsByClassName('close')[0];
     container = document.getElementById('main');
 
-    const onModalClick = (event) => {
-      if (ref.current.contains(event.target)) {
-        modal.style.display = 'none';
-        container.style.zIndex = -1;
-      }
-    };
+    // const onModalClick = (event) => {
+    //   if (ref.current.contains(event.target)) {
+    //     modal.style.display = 'none';
+    //     container.style.zIndex = -1;
+    //   }
+    // };
 
-    document.body.addEventListener('click', onModalClick, { capture: true });
+    // document.body.addEventListener('click', onModalClick, { capture: true });
 
-    return () => {
-      document.body.removeEventListener('click', onModalClick, {
-        capture: true,
-      });
-    };
+    // return () => {
+    //   document.body.removeEventListener('click', onModalClick, {
+    //     capture: true,
+    //   });
+    //};
   }, []);
 
   const handleClick = () => {
@@ -43,15 +48,25 @@ const ModalPage = ({ customStyle }) => {
 
   return (
     <React.Fragment>
-      <button onClick={handleClick} id="myBtn" className={customStyle}>
+      {/* <button onClick={handleClick} id="myBtn" className={customStyle}>
         Open Modal
-      </button>
+      </button> */}
+      <div className="sticky">
+        <button onClick={handleClick} id="myBtn" className="sticky-button">
+          <div className="sticky-custom-icon">
+            <FontAwesomeIcon
+              icon={flag ? faStickyNote : faQuestionCircle}
+              size={flag ? '2x' : '3x'}
+            />
+          </div>
+        </button>
+      </div>
       <div ref={ref} id="myModal" className="modal">
         <div className="modal-content">
           <span onClick={handleClose} className="close">
             &times;
           </span>
-          <p>Some text in the Modal..</p>
+          {children}
         </div>
       </div>
     </React.Fragment>

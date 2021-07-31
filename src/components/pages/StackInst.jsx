@@ -2,7 +2,8 @@ import { useEffect } from 'react';
 import './Instruction.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import StickyButton from '../layout/StickyButton';
+import ModalPage from './ModalPage';
+import Notes from './Notes';
 
 const StackInst = () => {
   // useEffect(() => {
@@ -17,7 +18,9 @@ const StackInst = () => {
 
   return (
     <div className="front">
-      <StickyButton customStyle="modal-btn" />
+      <ModalPage flag={true}>
+        <Notes />
+      </ModalPage>
       <h1 class="custom-h1">Stacks</h1>
 
       <div>

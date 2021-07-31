@@ -1,12 +1,12 @@
 import './Instruction.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import StickyButton from '../layout/StickyButton';
+import ModalPage from './ModalPage';
 
 const BubbleInst = () => {
   return (
     <div>
-      <StickyButton />
+      <ModalPage flag={true} />
       <h1 class="custom-h1">Bubble Sort</h1>
 
       <div>

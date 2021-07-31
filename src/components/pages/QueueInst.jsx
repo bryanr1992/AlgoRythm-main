@@ -1,13 +1,12 @@
 import './Instruction.css';
-import '../layout/StickyButton.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import StickyButton from '../layout/StickyButton';
+import ModalPage from './ModalPage';
 
 const QueueInst = () => {
   return (
     <div>
-      <StickyButton />
+      <ModalPage flag={true} />
       <h1 className="custom-h1">Queues</h1>
 
       <div>
