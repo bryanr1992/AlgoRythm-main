@@ -17,7 +17,7 @@ const CreateNote = (props) => {
 
   return (
     <div>
-      <form class="custom-form">
+      <form className="custom-form">
         <input
           onChange={handleChange}
           value={inputTitle}

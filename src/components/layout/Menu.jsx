@@ -4,7 +4,7 @@ import './Menu.css';
 
 const Menu = () => {
   return (
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" className="sidenav">
       <Link className="my-a" to="/outline">
         <img className="menu-icons" src="../assets/icon/book.svg"></img>
         <p className="menu-text">Learn</p>
