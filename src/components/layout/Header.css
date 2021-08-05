@@ -14,6 +14,15 @@
       font-weight: 400;
   }
 
+  .header-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header-h2{
+    margin: 0;
+  }
+
   /* .main-container {
     width: 200px;
     border: 1px solid #2d2d2d;
