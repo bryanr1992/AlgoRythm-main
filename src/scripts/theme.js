@@ -8,6 +8,7 @@ const setTheme = (themeName) => {
   const toggleTheme = () => {
     if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
+        console.log(localStorage.getItem('theme'));
     } else {
         setTheme('theme-dark');
     }

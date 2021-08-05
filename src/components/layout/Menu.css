@@ -49,7 +49,7 @@
     left: 0px;
     width: 100%;
     height: 93vh;
-    background: transparent linear-gradient(180deg, #39EAA8 0%, #0028EF 100%) 0% 0% no-repeat padding-box;
+    background: var(--background-color-custom);
     border-radius: 0px 34px 34px 0px;
     opacity: 1;
     overflow-x: hidden;

@@ -14,12 +14,6 @@ import Section from './layout/Section';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const App = () => {
-  const setTheme = () => {
-    document.documentElement.className = 'theme-light';
-    console.log('theme selected');
-  };
-
-  setTheme();
 
   return (
     <div className="main-wrapper">

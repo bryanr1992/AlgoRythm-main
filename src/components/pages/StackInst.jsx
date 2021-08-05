@@ -21,12 +21,12 @@ const StackInst = () => {
       <ModalPage flag={true}>
         <Notes />
       </ModalPage>
-      <h1 class="custom-h1">Stacks</h1>
+      <h1 className="custom-h1">Stacks</h1>
 
       <div>
         <div id="wrapper">
           <div id="main">
-            <div class="inner">
+            <div className="inner">
               <header className="major">
                 {/* previously id="header" */}
                 <a href="index.html" className="logo">
@@ -35,7 +35,7 @@ const StackInst = () => {
               </header>
 
               <section id="banner">
-                <div class="content">
+                <div className="content">
                   <header>
                     <h1 className="custom-h1-inner">Hi I'm the stack</h1>
                     <FontAwesomeIcon
@@ -43,10 +43,10 @@ const StackInst = () => {
                       icon="coffee"
                       size="xs"
                     />
-                    <p class="custom-p">by AlgoRythm</p>
+                    <p className="custom-p">by AlgoRythm</p>
                   </header>
                 </div>
-                <span class="image object">
+                <span className="image object">
                   <img
                     className="custom-img"
                     src="https://media.giphy.com/media/hUA5JLuHW7kTDQMy7f/giphy.gif"
@@ -56,19 +56,19 @@ const StackInst = () => {
               </section>
 
               <section>
-                <header class="major">
-                  <h2 class="custom-h2">What is a Stack?</h2>
+                <header className="major">
+                  <h2 className="custom-h2">What is a Stack?</h2>
                 </header>
-                <div class="features">
+                <div className="features">
                   <article>
-                    <span class="icon fa-gem">
+                    <span className="icon fa-gem">
                       <div className="custom-icon">
                         <FontAwesomeIcon icon={faLaptopCode} size="2x" />
                       </div>
                     </span>
-                    <div class="content">
+                    <div className="content">
                       <h3 className="custom-h3">it's a form of storage</h3>
-                      <p class="custom-p-title">
+                      <p className="custom-p-title">
                         Computers use stacks to store information. Just how you
                         would put away your books on a table "stacked" on top of
                         each other.
@@ -79,18 +79,18 @@ const StackInst = () => {
               </section>
 
               <section>
-                <header class="major">
-                  <h2 class="custom-h2">Why do we call it stack?</h2>
+                <header className="major">
+                  <h2 className="custom-h2">Why do we call it stack?</h2>
                 </header>
-                <div class="posts">
+                <div className="posts">
                   <article>
-                    <a href="#" class="image">
+                    <a href="#" className="image">
                       <img src="images/pic01.jpg" alt="" />
                     </a>
                     <h3 className="custom-h3">
                       1. It's in the nature of how it works
                     </h3>
-                    <p class="custom-p-title">
+                    <p className="custom-p-title">
                       When we insert an "element" into the stack to "store" it,
                       that element gets stored at the bottom. So, if we insert
                       another element after that first one, the second element
@@ -99,7 +99,7 @@ const StackInst = () => {
                     </p>
                   </article>
                   <article>
-                    <a href="#" class="image">
+                    <a href="#" className="image">
                       <img src="images/pic01.jpg" alt="" />
                     </a>
                     <h3 className="custom-h3">
@@ -110,13 +110,13 @@ const StackInst = () => {
                       src="assets/images/stack.png"
                       alt=""
                     />
-                    <p class="custom-p-title">
+                    <p className="custom-p-title">
                       This is how we visualize a stack. For a more detail
                       explanation click the button below!
                     </p>
-                    <ul class="actions">
+                    <ul className="actions">
                       <li>
-                        <a href="Stacks_animation" class="button">
+                        <a href="Stacks_animation" className="button">
                           Click Here To Learn More
                         </a>
                       </li>
