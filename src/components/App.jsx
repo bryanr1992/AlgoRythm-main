@@ -30,6 +30,7 @@ const App = () => {
           <Switch>
             <Route path="/" component={Logo} exact />
             <Route path="/stack-p" component={Stack} />
+            <Route path="/queue-p" component={Queues} />
             <Route path="/bubble" component={BubbleInst} />
             <Route path="/queues" component={QueueInst} />
             <Route path="/outline" component={Outline} />

@@ -33,7 +33,7 @@ const ModalPage = ({ flag, children }) => {
     //   document.body.removeEventListener('click', onModalClick, {
     //     capture: true,
     //   });
-    //};
+    // };
   }, []);
 
   const handleClick = () => {
