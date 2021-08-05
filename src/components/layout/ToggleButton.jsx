@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
-import './HeaderButton.css';
+import './ToggleButton.css';
+import { toggleTheme } from '../../scripts/theme';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faToggleOn } from '@fortawesome/free-solid-svg-icons';
 
-const HeaderButton = ({ icon, size }) => {
+const ToggleButton = ({ icon, size }) => {
   const [toggle, setToggle] = useState(false);
+
+  const handleClick = () => {
+    toggleTheme();
+    setToggle(!toggle)
+  };
+
   return (
     <div className="header-button">
       <FontAwesomeIcon
-        onClick={() => setToggle(!toggle)}
+        onClick={handleClick}
         className="icon"
         icon={toggle ? faToggleOn : icon}
         size={size}
@@ -17,4 +24,4 @@ const HeaderButton = ({ icon, size }) => {
   );
 };
 
-export default HeaderButton;
+export default ToggleButton;
