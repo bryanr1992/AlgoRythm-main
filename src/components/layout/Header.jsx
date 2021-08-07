@@ -17,7 +17,6 @@ const Header = () => {
         <Link to="/profile">
         <p className="menu-text">Profile</p>
       </Link>
-        
       </div>
   );
 };
