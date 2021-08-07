@@ -10,6 +10,7 @@ import Stack from './pages/Stack';
 import Queues from './pages/Queues';
 import Logo from './layout/Logo';
 import Outline from './pages/Outline';
+import Profile from './pages/Profile';
 import Section from './layout/Section';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -30,6 +31,7 @@ const App = () => {
             <Route path="/outline" component={Outline} />
             <Route path="/stacks" component={StackInst} />
             <Route path="/notes" component={Notes} />
+            <Route path="/profile" component={Profile} />
           </Switch>
         </div>
       </Router>

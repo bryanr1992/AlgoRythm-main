@@ -23,6 +23,11 @@
     margin: 0;
   }
 
+  .authenicationButton{
+    display: inline-block;
+    justify-content: flex-start;
+  }
+
   /* .main-container {
     width: 200px;
     border: 1px solid #2d2d2d;
