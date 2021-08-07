@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
 import { setTheme } from './scripts/theme';
-import { Auth0Provider } from "@auth0/auth0-react";
-
+import Auth0ProviderWithHistory from './components/layout/Auth0/Auth0ProviderWithHistory';
 
 (() => {
   if (localStorage.getItem('theme') === 'theme-dark') {
@@ -14,17 +13,9 @@ import { Auth0Provider } from "@auth0/auth0-react";
 })();
 
 ReactDOM.render(
-  <Auth0Provider
-  domain="dev-06ahjyxx.us.auth0.com"
-  clientId="RZwIZVIy8sGKwxTIZlF7fLBq5iFa46BR"
-  redirectUri={window.location.origin}
-  useRefreshTokens={true}
-  cacheLocation="localstorage"
-> 
-
-<App />
-
-</Auth0Provider>, 
+<Auth0ProviderWithHistory> 
+  <App />
+</Auth0ProviderWithHistory>, 
 document.querySelector('#root')
 
 );

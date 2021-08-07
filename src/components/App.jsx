@@ -14,6 +14,7 @@ import Profile from './pages/Profile';
 import Section from './layout/Section';
 import ProtectedRoute from './layout/Auth0/ProtectedRoute';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BETester from './pages/BETester';
 
 const App = () => {
 
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/stacks" component={StackInst} />
             <Route path="/notes" component={Notes} />
             <ProtectedRoute path="/profile" component={Profile} />
+            <Route path="/BETester" component={BETester} />
           </Switch>
         </div>
       </Router>
