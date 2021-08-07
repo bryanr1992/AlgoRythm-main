@@ -15,17 +15,18 @@
   }
 
   .header-btn {
-    display: flex;
+    display: inline-block;
     justify-content: flex-end;
   }
 
   .header-h2{
+    display:inline;
     margin: 0;
   }
 
   .authenicationButton{
     display: inline-block;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
   /* .main-container {

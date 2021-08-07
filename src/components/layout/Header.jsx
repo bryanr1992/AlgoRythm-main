@@ -12,11 +12,12 @@ const Header = () => {
   return (
       <div className="header">
         <ToggleButton className="header-btn"icon={faToggleOff} size="1x"/>
+        <h2 className="header-h2" >AlgoRythm</h2>
         <AuthenticationButton />
         <Link to="/profile">
         <p className="menu-text">Profile</p>
       </Link>
-        <h2 className="header-h2" >AlgoRythm</h2>
+        
       </div>
   );
 };
