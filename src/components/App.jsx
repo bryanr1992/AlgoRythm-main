@@ -12,7 +12,7 @@ import Logo from './layout/Logo';
 import Outline from './pages/Outline';
 import Profile from './pages/Profile';
 import Section from './layout/Section';
-import ProtectedRoute from './layout/Auth0/ProtectedRoute';
+import ProtectedRoute from './Auth0/ProtectedRoute';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import BETester from './pages/BETester';
 

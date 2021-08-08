@@ -6,7 +6,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
-import AuthenticationButton from './Auth0/AuthenticationButton';
+import AuthenticationButton from './AuthenticationButton';
 
 const Header = () => {
   return (
